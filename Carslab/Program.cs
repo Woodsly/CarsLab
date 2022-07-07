@@ -13,12 +13,7 @@ Console.WriteLine("Welcome to Fun World Lot");
 Car.ListCars(carList);
 Console.WriteLine("Which car would you like?");
 int input = int.Parse(Console.ReadLine());
+Console.WriteLine($"{carList[input-1].Make} {carList[input-1].Model} {carList[input-1].Year} {carList[input-1].Price}");
 Car.Remove(input, carList);
 Console.WriteLine("Fine choice! You will recieve this car in 3 weeks!");
 Car.ListCars(carList);
-
-
-
-
-
-
