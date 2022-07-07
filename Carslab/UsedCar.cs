@@ -18,7 +18,7 @@ namespace Carslab
             Price = _price;
             Mileage = _mileage;
         }
-        public override void ToString()
+        public virtual void ToString()
         {
             Console.WriteLine($"{Make} is a {Model} from the year {Year} and costs ${Price}.  It has {Mileage} miles.");
         }
