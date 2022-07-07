@@ -9,13 +9,13 @@ List<Car> carList = new List<Car>()
     new UsedCar ("Honda", "Civic", 2010,5000, 100000),
     new UsedCar ("Mariocart", "Yoshi", 1983, 10000000, 10000),
 };
-int i = 0;
-
-//ListCars(carList);
-//carList.
-
-
-
+Console.WriteLine("Welcome to Fun World Lot");
+Car.ListCars(carList);
+Console.WriteLine("Which car would you like?");
+int input = int.Parse(Console.ReadLine());
+Car.Remove(input, carList);
+Console.WriteLine("Fine choice! You will recieve this car in 3 weeks!");
+Car.ListCars(carList);
 
 
 
